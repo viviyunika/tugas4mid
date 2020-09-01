@@ -1,0 +1,316 @@
+/*MULTIPLE AREA */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.about h1 , .blog h1, .portfolio h1, .team h1, .contact h1 {
+    text-align: center;
+    padding: 30px 0 80px 0;
+    color: orange;
+}
+
+.about .row .column1 img, .portfolio .rowport img, .team .rowteam .colteam img {
+    transition: transform .2s;
+}
+
+.about .row .column1 img:hover, .portfolio .rowport img:hover, .team .rowteam .colteam img:hover {
+    -ms-transform: scale(1.07); /* IE 9 */
+    -webkit-transform: scale(1.07); /* Safari 3-8 */
+    transform: scale(1.07); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS";
+}
+
+body {
+    font-family: roboto;
+    background-color: rgb(243, 240, 240);
+}
+
+/*HEADER (NAVBAR) AREA*/
+
+.wrapheader {
+    background: orange;
+    background-size: cover;
+    min-height: 8vh;
+    position: fixed;
+    width: 100%;
+    padding: 15px 40px;
+}
+
+header .home {
+    float: left;
+}
+
+header .menu {
+    float: right;
+}
+
+.menu ul li a, header a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+.menu ul li a:hover , header a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: orange;
+    border-radius: 2px;
+}
+
+/*CONTENT AREA*/
+
+.content {
+    padding: 13vw;
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content h1 {
+    max-width: 70%;
+    padding: 150px 0 0 0;
+    font-size: 35px;
+    color: orange;
+}
+
+.content p {
+    max-width: 60%;
+    font-size: 16px;
+    color: rgb(87, 87, 87);
+}
+
+.content .seemore {
+    margin-top: 15px;
+}
+
+.seemore a {
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color:orange;
+    border: none;
+}
+
+button:hover {
+    color: orange;
+    background-color: white;
+}
+
+/*ABOUT AREA*/
+
+.about {
+    padding: 9vw 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    border-right: 4px solid rgb(14, 184, 169);
+}
+
+.column1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.column1 p {
+    color: darkgrey;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 3;
+    padding: 2vw 10vw 0 20px;
+}
+
+.column2 h2 {
+    color: rgb(14, 184, 169);
+}
+
+.column2 p {
+    color: rgb(122, 121, 121);
+}
+
+/*PORTFOLIO AREA*/
+
+.rowport {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+.rowport .colport {
+width: 32%;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio {
+    padding: 50px;
+}
+
+/* BLOG AREA */
+
+.blog {
+    padding: 50px 0 0 0;
+}
+
+.rowblog {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+
+.rowblog .colblog {
+    width: 32%;
+}
+
+.blog h2 {
+    color: orange;
+}
+
+.blog .posttitletext {
+    background-color: white;
+    margin: 0 -10px;
+}
+
+.blog .rowblog .colblog .posttitletext {
+    padding: 20px 0;
+}
+
+.blog .rowblog .colblog .readmore {
+    padding: 10px 20px;
+    margin:  -10px;
+    background-color: rgb(194, 186, 186);
+}
+
+.blog .rowblog .colblog img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.blog .rowblog .colblog {
+    margin: 10px;
+    border-style: groove;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.blog .rowblog .colblog a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog .rowblog .colblog a:hover {
+    font-size: 110%;
+    color: inherit;
+}
+
+/* OUR TEAM AREA */
+
+.team {
+    padding: 50px 0 0 0 ;
+}
+.rowteam {
+    display: flex;
+    justify-content: space-around;
+    padding: 10vw;
+    flex-wrap: wrap;
+}
+
+.rowteam p {
+    color: darkgrey;
+}
+
+/* GET IN TOUCH AREA */
+
+.contact {
+    padding: 20px 0 0 0;
+}
+
+.containercontact {
+    padding:50px;
+    margin:40px 70px;
+}
+
+.containercontact:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#column1 {
+    float: left;
+    width: 40%;
+}
+
+#column2 {
+    float: left;
+    width: 60%;
+}
+
+.contact input {
+    width: 100%;
+}
+
+.message input {
+    line-height: 10em;
+}
+
+.name, .email, .message {
+    padding: 10px;
+}
+
+#send {
+    width: 97%;
+    margin-left: 8px;
+    border-radius: 5px;
+    color: #fff;
+    background-color:orange;
+    border: none;
+    padding: 10px 0;
+    text-align: top;
+}
+
+#send:hover {
+    color: orange;
+    background-color: white;
+}
+
+.containercontact #column2 .name input, .containercontact #column2 .email input  {
+    height: 40px;   
+}
